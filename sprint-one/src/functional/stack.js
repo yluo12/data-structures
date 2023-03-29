@@ -7,7 +7,6 @@ var Stack = function() {
 
   // Implement the methods below
   someInstance.push = function(value) {
-    // var length = Object.keys(someInstance.storage).length;
     someInstance.storage[someInstance.size()] = value;
   };
 
