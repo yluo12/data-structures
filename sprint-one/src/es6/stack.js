@@ -1,7 +1,24 @@
 class Stack {
-  // Hey! Rewrite in the new style. Your code will wind up looking very similar,
-  // but try not not reference your old code in writing the new style.
   constructor() {
+    this.stackSize = 0;
+  }
+
+  push(value) {
+    stackTray[this.stackSize] = value;
+    this.stackSize++;
+  }
+  pop() {
+    if (this.stackSize > 0) {
+      this.stackSize--;
+    }
+    var topItem = stackTray[this.stackSize];
+    delete stackTray[this.stackSize];
+    return topItem;
+  }
+  size() {
+    return this.stackSize;
   }
 
 }
+var stackTray = {};
+
