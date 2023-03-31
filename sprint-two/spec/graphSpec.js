@@ -68,4 +68,14 @@ describe('graph', function() {
     expect(graph.hasEdge(3, 5)).to.equal(true);
     expect(graph.hasEdge(5, 5)).to.equal(true);
   });
+  it('should not invoke callback function on methods', function() {
+    var connectToFive = function(item) {
+      graph.addEdge(item, 5);
+    };
+    graph.addNode(5);
+    graph.addNode(2);
+    graph.forEachNode(connectToFive);
+    expect(graph.hasEdge(graph.addNode, 5)).to.equal('Check your input!');
+
+  });
 });
