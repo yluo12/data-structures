@@ -53,8 +53,6 @@ HashTable.prototype.remove = function(k) {
 
 
 
-
-
 /*
  * Complexity: What is the time complexity of the above functions?
 time complexities of all three methods are appoximately O(1)
