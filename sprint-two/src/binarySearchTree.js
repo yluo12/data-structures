@@ -57,4 +57,5 @@ bstMethods.depthFirstLog = function(func) {
 };
 /*
  * Complexity: What is the time complexity of the above functions?
+For all of the methods, the time complexity is O(log n)
  */
