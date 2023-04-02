@@ -52,4 +52,12 @@ describe('linkedList', function() {
   });
 
   // add more tests here to test the functionality of linkedList
+  it('after removing all items, head and tail are set to null', function() {
+    linkedList.addToTail(4);
+    linkedList.addToTail('stringsRfun');
+    linkedList.removeHead();
+    linkedList.removeHead();
+    expect(linkedList.head).to.equal(null);
+    expect(linkedList.tail).to.equal(null);
+  });
 });
