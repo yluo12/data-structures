@@ -20,4 +20,5 @@ class Stack {
 
   push (value) {
     this.storage[this.size()] = value;
+  }
 }
